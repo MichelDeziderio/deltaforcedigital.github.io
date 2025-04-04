@@ -376,7 +376,7 @@ body {
 }
 
 .modal-dialog-centered:not(.show) {
-  display: flex !important;
+  display: none !important;
   transition: all 0.3s ease-in-out;
   transform: scale(1) !important;
   justify-content: center;
@@ -409,4 +409,33 @@ body {
     color: #576d76;
     font-weight: 500;
   }
+}
+
+.single-item {
+  margin-top: 20px;
+}
+
+.comment {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  min-height: 156px;
+  background-color: rgba(0, 0, 0, 0.18);
+  border-radius: 10px;
+  padding: 30px;
+  margin: 0 1px;
+  position: relative;
+
+  &:before {
+    content: '“';
+    font-size: 100px;
+    position: absolute;
+    top: -22px;
+    left: 9px;
+
+    @media(max-width: 768px){
+      display: none;
+    }
+  }
+
 }
