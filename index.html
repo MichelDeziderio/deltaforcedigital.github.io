@@ -240,7 +240,7 @@
       <div class="container-fluid">
         <div class="row align-items-center justify-content-center">
           <div class="col-md-7 text-center mb-1">
-            <h2 class="title mb-3 wow animated animated fadeInUp">COMENTÁRIOS</h2>
+            <h2 class="title mb-3 wow animated animated fadeInUp">O QUE DIZEM NOSSOS CLIENTES</h2>
           </div>
           <div class="col-md-7 text-center">
 
@@ -268,6 +268,45 @@
         </div>
     </section>
   </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-3 text-left mb-3">
+          <h2 class="title wow animated animated fadeInUp">CONTATO</h2>
+          <p class="wow animated animated fadeInUp">Entre em contato e descubra como podemos ajudar sua marca a crescer
+            digitalmente.</p>
+        </div>
+        <div class="col-md-2 text-right mb-3">
+          <h2 class="title wow animated animated fadeInUp">LINKS</h2>
+          <ul class="wow animated animated fadeInUp">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#skills">Habilidades</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="javascript:void(0)" onclick="insertContact()" data-bs-toggle="modal"
+                data-bs-target="#exampleModal">Contato</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 text-left mb-3">
+          <h2 class="title wow animated animated fadeInUp">REDES SOCIAIS</h2>
+          <p class="wow animated animated fadeInUp">Siga-nos e fique por dentro das novidades e dicas de marketing
+            digital.</p>
+          <p class="wow animated animated fadeInUp"><a href="https://www.instagram.com/deltaforcedigital/"
+              target="_blank" rel="noopener noreferrer">@deltaforcedigital</a></p>
+        </div>
+
+      </div>
+    </div>
+    <div class="container-fluid text-center mt-5">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-12 text-center">
+          <p class="wow animated animated fadeInUp">© 2025 Delta Force Digital. Todos os direitos reservados.</p>
+        </div>
+      </div>
+  </footer>
+  <!-- /Footer -->
 
 
   <!-- Modal -->
@@ -298,6 +337,25 @@
       autoplay: true,
       autoplaySpeed: 5000,
       arrows: false,
+      dots: true,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
     });
 
     document.querySelector('.button-toggler').addEventListener('click', function () {
